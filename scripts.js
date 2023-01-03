@@ -37,3 +37,9 @@ btn.addEventListener("click", ()=>{
 function playSound(){
     sound.play();
 }
+
+var nav = document.querySelector(".nav");
+
+function dropmenu(){
+    nav.classList.toggle('drop-menu')
+}
