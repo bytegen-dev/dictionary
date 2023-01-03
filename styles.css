@@ -116,8 +116,8 @@ body{
     height: 50px;
     scale: 1;
     border-radius: inherit;
-    background: #ae9cff20;
     background: #ae9cff;
+    background: #ae9cffa0;
     z-index: -1;
     animation: ham 3s linear infinite;
     animation-delay: 0.5s;
@@ -130,8 +130,8 @@ body{
     height: 50px;
     scale: 1;
     border-radius: inherit;
-    background: #ae9cff20;
     background: #ae9cff;
+    background: #ae9cffa0;
     /* opacity: 0.3; */
     z-index: -2;
     animation: ham 3s linear infinite forwards;
