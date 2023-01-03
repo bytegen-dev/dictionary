@@ -52,14 +52,6 @@ body{
     transition: all 0.5s ease;
 }
 
-.nav.drop-menu{
-    /* background: rgba(255, 255, 255, 0.9); */
-    /* box-shadow: 0px 0px 100px #0005; */
-    height: 80vh;
-    /* min-height: 500px; */
-    overflow: scroll;
-}
-
 .nav .head{
     width: 100%;
     display: flex;
@@ -185,9 +177,11 @@ i.fa.fa-close{
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
+    width:100vw;
+    scale: 0;
+    opacity: 0;
     /* box-shadow: -2px 0px 90vw #0000; */
-    transform: translateX(100%);
+    transform: translateX(200%);
     height: 100vh;
     background: rgba(255, 255, 255, 0.754);
     z-index: 1;
@@ -198,10 +192,13 @@ i.fa.fa-close{
     align-items: center;
     color: #ae9cff;
     font-size: 70px;
+    border-radius: 30px;
 }
 
 .drop-menu .menu{
     /* box-shadow: 0px 0px 20px #0004; */
+    scale: 0.9;
+    opacity: 1;
     transform: translateX(0);
 }
 
