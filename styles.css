@@ -288,6 +288,27 @@ i.fa.fa-close{
     margin-top: 30px;
 }
 
+.swiper-pagination{
+    /* border: 2px solid #000; */
+    position: relative !important;
+    margin-top: 50px;
+    /* transform: translateY(100px); */
+    /* transform: translateY(50px); */
+}
+
+.swiper-pagination-bullet-active-main{
+    background: #443583 !important;
+    /* border: 2px solid #000 !important; */
+
+
+}
+
+.swiper-pagination-bullet-active-next{
+    border: 2px solid #000 !important;
+
+
+}
+
 
 @media screen and (max-width: 600px) {
     .container{
