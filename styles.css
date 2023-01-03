@@ -44,17 +44,17 @@ body{
     position: fixed;
     width: 100vw;
     height: 70px;
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
     /* backdrop-filter: blur(7px); */
-    box-shadow: 0px 0px 20px #0002;
+    /* box-shadow: 0px 0px 20px #0002; */
     top: 0;
     z-index: 1;
     transition: all 0.5s ease;
 }
 
 .nav.drop-menu{
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 0px 100px #0005;
+    /* background: rgba(255, 255, 255, 0.9); */
+    /* box-shadow: 0px 0px 100px #0005; */
     height: 80vh;
     /* min-height: 500px; */
     overflow: scroll;
@@ -63,11 +63,13 @@ body{
 .nav .head{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
     height: 70px;
-    border-bottom: 1px solid #0002;
+    z-index: 2;
+    position: relative;
+    /* border-bottom: 1px solid #0002; */
 }
 
 .nav .head .logo{
@@ -83,7 +85,10 @@ body{
     color: rgba(88, 19, 88, 0.835);
     font-size: 30px;
     transition: all 0.5s ease;
+    display: none;
 }
+
+
 
 
 .nav .head .hamburger{
@@ -92,17 +97,69 @@ body{
     width: 50px;
     height: 50px;
     border: 3px solid transparent;
-    border-radius: 10px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(88, 19, 88, 0.835);
+    background: #ae9cff;
+    color: #fff;
+    /* box-shadow: 0px 0px 10px #000d; */
     font-size: 30px;
     transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.nav .head .hamburger i{
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+i.fa.fa-close{
+    /* transform: translateX(50px); */
+    opacity: 0;
+    scale: 0;
+}
+
+.drop-menu i.fa-close{
+    /* transform: translateX(0); */
+    opacity: 1;
+    scale: 1;
+}
+
+.drop-menu i.fa-bars{
+    /* transform: translateX(-50px); */
+    opacity: 0;
+    scale: 0;
 }
 
 .nav .head .hamburger:hover{
     border: 2px solid #0003;
+}
+
+.drop-menu .head .hamburger{
+    transform: rotate(360deg);
+    /* content: "xxaaaasdfsgddfsda"; */
+}
+
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    /* box-shadow: -2px 0px 90vw #0000; */
+    transform: translateX(100%);
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.754);
+    z-index: 1;
+    transition: all 0.5s ease;
+    backdrop-filter: blur(5px);
+}
+
+.drop-menu .menu{
+    /* box-shadow: 0px 0px 20px #0004; */
+    transform: translateX(0);
 }
 
 .search-box{
