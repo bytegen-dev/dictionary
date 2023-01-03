@@ -106,7 +106,45 @@ body{
     /* box-shadow: 0px 0px 10px #000d; */
     font-size: 30px;
     transition: all 0.5s ease;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.nav .head .hamburger::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    scale: 1;
+    border-radius: inherit;
+    background: #ae9cff20;
+    background: #ae9cff;
+    z-index: -1;
+    animation: ham 3s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.nav .head .hamburger::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    scale: 1;
+    border-radius: inherit;
+    background: #ae9cff20;
+    background: #ae9cff;
+    /* opacity: 0.3; */
+    z-index: -2;
+    animation: ham 3s linear infinite forwards;
+}
+
+@keyframes ham {
+    0%{
+        scale: 0;
+    }
+
+    100%{
+        scale: 3;
+    opacity: 0;}
 }
 
 .nav .head .hamburger i{
@@ -155,6 +193,11 @@ i.fa.fa-close{
     z-index: 1;
     transition: all 0.5s ease;
     backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ae9cff;
+    font-size: 70px;
 }
 
 .drop-menu .menu{
