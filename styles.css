@@ -178,8 +178,8 @@ i.fa.fa-close{
     top: 0;
     right: 0;
     width:100vw;
-    scale: 0;
-    opacity: 0;
+    /* scale: 0; */
+    /* opacity: 0; */
     /* box-shadow: -2px 0px 90vw #0000; */
     transform: translateX(200%);
     height: 100vh;
@@ -192,13 +192,13 @@ i.fa.fa-close{
     align-items: center;
     color: #ae9cff;
     font-size: 70px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    /* scale: 0.9; */
 }
 
 .drop-menu .menu{
     /* box-shadow: 0px 0px 20px #0004; */
-    scale: 0.9;
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateX(0);
 }
 
