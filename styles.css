@@ -232,9 +232,14 @@ i.fa.fa-close{
 }
 
 
-.result{
-    transition: all 1s ease;
+/* .result{
     position: relative;
+    opacity: 0;
+    transition: all 1s ease;
+} */
+
+.result.show{
+    opacity: 1;
 }
 
 .result h3{
@@ -256,14 +261,6 @@ i.fa.fa-close{
     margin-top: 80px;
 }
 
-.result button{
-    background-color: transparent;
-    transition: all 1s ease;
-    color: #ae9cff;
-    border: none;
-    outline: none;
-    font-size: 18px;
-}
 
 .result .details{
     transition: all 1s ease;
@@ -273,6 +270,7 @@ i.fa.fa-close{
     margin: 5px 0 20px 0;
     font-size: 14px;
 }
+
 
 .word-meaning{
     transition: all 1s ease;
@@ -285,6 +283,7 @@ i.fa.fa-close{
     font-style: italic;
     border-left: 5px solid #ae9cff;
     padding: 20px;
+    overflow-x: scroll;
     margin-top: 30px;
 }
 
@@ -292,8 +291,12 @@ i.fa.fa-close{
     /* border: 2px solid #000; */
     position: relative !important;
     margin-top: 50px;
-    /* transform: translateY(100px); */
-    /* transform: translateY(50px); */
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.swiper-pagination.showpagun{
+    opacity: 1;
 }
 
 .swiper-pagination-bullet-active-main{
@@ -309,6 +312,33 @@ i.fa.fa-close{
 
 }
 
+#candy{
+    position: absolute;
+    top: 20px;
+    font-size: 25px;
+}
+
+.soundit{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: none;
+}
+
+.soundit.showsoundit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width: 600px) {
     .container{
