@@ -321,23 +321,29 @@ i.fa.fa-close{
 .soundit{
     background-color: transparent;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     transition: all 1s ease;
     color: #ae9cff;
     border: none;
     outline: none;
     font-size: 18px;
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 0;
     display: none;
+    z-index: 10 !important;
+    /* border: 2px solid red; */
 }
+
+/* .soundit:hover{
+    opacity: 0 !important;
+} */
 
 .soundit.showsoundit{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 @media screen and (max-width: 600px) {

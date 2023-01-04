@@ -59,6 +59,7 @@ btn.addEventListener("click", ()=>{
 
 
 function playSound(){
+    // alert('hi')
     sound.play();
 }
 
